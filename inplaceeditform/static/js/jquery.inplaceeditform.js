@@ -63,7 +63,7 @@
                             data = extraConfig(data);
                         }
                         var can_auto_save = parseInt($(this).find("span.config span.can_auto_save").html());
-                        data += "&__widget_height=" + $(this).innerHeight() + "px" + "&__widget_width=" + $(this).innerWidth() + "px";
+                        data += "&__widget_width=" + $(this).innerWidth() + "px";
                         var that = this;
                         $.ajax(
                             {

@@ -1,8 +1,9 @@
 {% extends "inplaceeditform/render_field.html" %}
 {% load i18n %}
 
+{% block wrapperclass %}{% endblock %}
 {% block apply %}
-    <button class="applyFile {% block classapply %}{% endblock %}" title="{% trans "Apply change" %}" type="button">
+    <button class="btn btn-success applyFile {% block classapply %}{% endblock %}" title="{% trans "Apply change" %}" type="button">
         <span>
         {% trans "Save" %}
         </span>
